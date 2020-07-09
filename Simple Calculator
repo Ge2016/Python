@@ -1,0 +1,23 @@
+#Ge Xiong - Project 2 - 10/1/18
+#Simple calculator 
+
+operation = input('''Input a math operation:
++ for addition
+- for subtraction
+* for multiplication
+/ for division
+''')
+
+num1 = float(input('Enter first number: '))
+num2 = float(input('Enter second number: '))
+
+if operation == '+':
+    print(num1 + num2)
+elif operation == '-':
+    print(num1 - num2)
+elif operation == '*':
+    print(num1 * num2)
+elif operation == '/':
+    print(num1 / num2)
+else:
+    print('ERROR')
