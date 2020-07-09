@@ -1,0 +1,32 @@
+#Ge Xiong - 11/12/18 
+#Dictionaries and Lists
+
+student_grades = {
+    'Andrew': [56, 79, 90, 22, 50],
+    'Colin': [88, 62, 68, 75, 78],
+    'Alan': [95, 88, 92, 85, 85],
+    'Mary': [76, 88, 85, 82, 90],
+    'Tricia': [99, 92, 95, 89, 99]
+}
+
+def grade_percent():
+    for grades in student_grades:
+        total_grade = student_grades[grades]
+        total = 0
+        j = 0
+        for i in total_grade:
+            total += i
+            j += 1
+        percent = total/j
+        print(grades,': ', percent)
+
+def avg():
+    class_avg = [0]*len(student_grades[0])
+    for i in student_grades.keys():
+        grade = student_grades[i]
+        for j in range(len(i)):
+            class_avg[j] = grade[i]
+        print(class_avg[j]/class_avg)
+
+grade_percent()
+avg()
